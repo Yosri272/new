@@ -12,8 +12,8 @@ class m_viewController extends Controller
     {
 
         $a_viewData = User::all()->where('id','=',$id);
-                                
-                                
-        return view('admin/a_view' ,compact('a_viewData'));
+
+
+        return view('admin.a_view' ,compact('a_viewData'));
     }
 }

@@ -12,13 +12,8 @@ class regcaseController extends Controller
     public function Stort( Request $request,$id)
 {
 $topic = topic::find($id);
-
-
-    
-       
-
 $regcase= new regcase;
-$regcase->journalist=$topic->journalist; 
+$regcase->journalist=$topic->journalist;
 $regcase->r_address = $request->r_address;
 $regcase->r_reason = $request->r_reason;
 $regcase->save();
